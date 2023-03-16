@@ -1,0 +1,172 @@
+@media only screen and (min-width:577px){
+    .sadrzaj{
+        display: grid;
+        grid-template-areas:'header header header header header'
+                            'sidebar_left content content content content '
+                            'sidebar_left content content content content'
+                            'sidebar_left content content content content'
+                            'sidebar_left content content content content'
+                            'footer footer footer footer footer';
+        grid-gap: 10px;
+        background-color: rgb(38, 49, 148);
+        padding: 10px;
+        align-items: stretch;
+        min-height: 100vh;
+    }
+    .sadrzaj > div{
+        background-color: rgb(185, 54, 54);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    .slika{
+        width: 800px;
+        height: 500px;
+    }
+    
+    .header{
+        grid-area: header;
+        animation-name: maki;
+        animation-duration: 2s;
+        text-align: left;
+    }
+    .header div{
+        display: inline-block;
+        text-align: left;
+        
+
+    }
+    .logo{
+        fill-opacity: ;
+
+    }
+    .sidebar_left{
+        grid-area: sidebar_left;
+        font-style: italic;
+    }
+    .sidebar_right{
+        grid-area: sidebar_right;
+    }
+    .content{
+        grid-area: content;
+    }
+    .footer{
+        grid-area: footer;
+    }
+    .logo {
+        text-align: left;
+        margin-left: 3%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .slika{
+        image-rendering: optimizeQuality;
+        opacity: 0.7;
+        min-height: 100%;   
+        min-width: 100%;
+    }
+    .topnav{
+        text-align: right;
+        padding-right: 20px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-left: 20px;
+        top: 100px;
+        left: 100px;
+    }
+    
+        
+    .restaurants{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: underline;
+        font-weight: 1000;
+
+    }
+    .grillfastfood{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: underline;
+        font-weight: 1000;
+    }
+    .catering{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: underline;
+        font-weight: 1000;
+    }
+    .header{
+        text-align: center;
+    }
+
+    ul{
+        padding-left: 10px;
+        padding-right: 10px;
+        list-style-type: none;
+    }
+
+   
+    }
+  
+
+
+
+    @media only screen and (max-width:576px)
+    {
+        body{
+            background-color: rgb(38, 49, 148);
+        }
+    
+        .sadrzaj{
+            display: grid;
+            grid-template-areas:'header header header header header'
+                                'content content content content content'
+                                'content content content content content'
+                                'sidebar_left sidebar_left sidebar_left sidebar_left sidebar_left '
+                                'sidebar_right sidebar_right sidebar_right sidebar_right sidebar_right'
+                                'footer footer footer footer footer';
+            grid-gap: 10px;
+            background-color: #2196f3;
+            padding: 10px;
+            align-items: stretch;
+            min-height: 100vh;
+        }
+        .sadrzaj > div{
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+        
+        .header{
+            grid-area: header;
+            animation-name: maki;
+            animation-duration: 2s;
+        }
+        .sidebar_left{
+            grid-area: sidebar_left;
+        }
+        .sidebar_right{
+            grid-area: sidebar_right;
+        }
+        .content{
+            grid-area: content;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .slika{
+            width: 200px;
+            height: 200px;
+        }
+        @keyframes maki {
+                from{ background-color: rgba(255, 255, 255, 0.8);}
+                to{background-color: violet ;}
+        }
+
+        ul{
+
+            list-style-type: none;
+        }
+    
+    
+    }
